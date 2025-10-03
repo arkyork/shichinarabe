@@ -10,7 +10,6 @@ if __name__ == "__main__":
     
     # カードを配る処理
     game.deal_cards(agent_lists)
-    game.print_map()
 
     # ゲームの進行
     while True:
@@ -26,8 +25,7 @@ if __name__ == "__main__":
             if game.judge(agent_lists):
                 break
 
-        # ユーザーがプレイする場合は盤面の出力を行う
-        game.print_map()
+
         
         # ゲームの終了条件をチェック
         if game.judge(agent_lists):

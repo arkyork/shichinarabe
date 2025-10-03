@@ -1,10 +1,14 @@
 from .Agent import Agent
 class HumanAgent(Agent):
     def one_step(self, game):
+        # ユーザーがプレイする場合は盤面の出力を行う
+        game.print_map()
+        
         # 出せるカードのリスト
         playable = [c for c in self.cards if game.can_play(c)]
 
         if playable:
+
             print(f"\n{self} のターン！ あなたの手札:")
             sorted_cards = sorted(
                 self.cards,
