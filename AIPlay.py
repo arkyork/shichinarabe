@@ -22,6 +22,8 @@ if __name__ == "__main__":
 
     # ゲームループ
     while True:
+        # agent_lists内のループで終わったかチェック
+        agent_flag = False
         for agent in agent_lists:
             if agent.state == 4:
                 # エージェントが生存していたらカードを散らす
@@ -31,9 +33,8 @@ if __name__ == "__main__":
             agent.one_step(game)
 
             if game.judge(agent_lists):
-                break
-
-
-
-        if game.judge(agent_lists):
+                agent_flag = True
+                break  
+        if agent_flag:
             break
+

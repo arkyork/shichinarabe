@@ -1,10 +1,9 @@
-# env_sevens.py
 import numpy as np
 import gymnasium as gym
 from gymnasium import spaces
 
 from Game import Game
-from Agent.RandomAgent import RandomAgent  # 既存の簡単AI
+from Agent.RandomAgent import RandomAgent  # 既存のランダムエージェント
 
 # --- 行動IDの割り当て ---
 # 0..47 = (suit, num) に対応, 48 = PASS
