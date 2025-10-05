@@ -2,7 +2,9 @@
 Pythonで「七並べ」を実装したレポジトリとなっています。
 本リポジトリでは、ランダムエージェントと強化学習エージェント（PPO）によるプレイを実現しました。
 
-<video src="./play_movie.mp4" controls="true"> </video>
+![play demo](./play_demo.gif)
+
+[🎬 動画を再生する（play_movie.mp4）](./play_movie.mp4)
 
 ## ファイル構成
 
